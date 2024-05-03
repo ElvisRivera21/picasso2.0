@@ -10,44 +10,37 @@
 
 .red{
     background-color: rgb(206, 39, 21);
-    height: 100px;
-    width: 100px;
+   
 }
 
 .orange {
     background-color: rgb(232, 125, 36);
-    height: 100px;
-    width: 100px;
+   
 }
 
 .yellow {
     background-color: rgb(206, 184, 21);
-    height: 100px;
-    width: 100px;
+    
 }
 
 .green {
     background-color: rgb(26, 144, 11);
-    height: 100px;
-    width: 100px;
+    
 }
 
 .blue {
     background-color: rgb(46, 21, 206);
-    height: 100px;
-    width: 100px;
+   
 }
 
 .indigo {
     background-color: rgb(125, 15, 52);
-    height: 100px;
-    width: 100px;
+   
 }
 
 .violet {
     background-color: rgb(206, 21, 200);
-    height: 100px;
-    width: 100px;
+    
 }
 
 .rainbow {
@@ -59,6 +52,28 @@ flex-wrap: wrap;
 h1, p:hover{
     background-color: black;
 }
+
+/*bar growth*/
+
+.rainbow>div {
+    width: 100px;
+    transition: width 0.3s ease;
+    
+}
+
+/* On hover, expand the width to fill the page */
+.rainbow>div:hover {
+    width: calc(100% - 20px);
+    /* Set width to fill the page, subtracting margins */
+}
+
+
+
+
+
+
+
+
 
 body {
     background-image: url("./resources/picasso.jpg");
