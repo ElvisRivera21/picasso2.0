@@ -51,10 +51,20 @@
 }
 
 .rainbow {
-display: flex;
-flex-wrap: wrap
+display: grid;
+flex-wrap: wrap;
+
 }
 
-h1,p:hover{
+h1, p:hover{
     background-color: black;
+}
+
+body {
+    background-image: url("./resources/picasso.jpg");
+    background-size: 200px;
+    background-position: center;
+    border-radius: 20px;
+    border: 2px solid;
+    
 }
