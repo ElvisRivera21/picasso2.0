@@ -1,0 +1,94 @@
+.title {
+    background-color: rgb(16, 98, 98);
+    color: blanchedalmond;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 20 px 20px 15px;
+    padding: 15px;
+
+}
+
+.red{
+    background-color: rgb(206, 39, 21);
+    border-radius: 20px;
+}
+
+.orange {
+    background-color: rgb(232, 125, 36);
+    border-radius: 20px;
+}
+
+.yellow {
+    background-color: rgb(206, 184, 21);
+    border-radius: 20px;
+}
+
+.green {
+    background-color: rgb(26, 144, 11);
+    border-radius: 20px;
+}
+
+.blue {
+    background-color: rgb(46, 21, 206);
+    border-radius: 20px;
+}
+
+.indigo {
+    background-color: rgb(125, 15, 52);
+    border-radius: 20px;
+}
+
+.violet {
+    background-color: rgb(206, 21, 200);
+    border-radius: 20px;
+}
+
+.rainbow {
+display: grid;
+flex-wrap: wrap;
+
+}
+
+h1, p:hover{
+    background-color: black;
+}
+
+/*bar growth*/
+
+.rainbow>div {
+    width: 450px;
+    transition: width 0.3s ease;
+    
+}
+
+/* On hover, expand the width to fill the page */
+.rainbow>div:hover {
+    width: calc(100% - 20px);
+    /* Set width to fill the page, subtracting margins */
+}
+
+
+.rainbow {
+    margin: 50px;
+    justify-content: center;
+        align-items: center;
+       
+}
+
+
+
+
+
+
+body {
+    background-image: url("./resources/picasso.jpg");
+    background-size: 200px;
+    background-position: center;
+    border-radius: 20px;
+
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    text-align: center;
+    font-size: large;
+   font-weight: bolder;
+}
