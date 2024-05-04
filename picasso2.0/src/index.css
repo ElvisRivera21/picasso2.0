@@ -75,7 +75,14 @@ h1, p:hover{
        
 }
 
-
+.userForm {
+    background-color: rgb(16, 98, 98);
+    color: blanchedalmond;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 20 px 20px 15px;
+    padding: 15px;
+}
 
 
 

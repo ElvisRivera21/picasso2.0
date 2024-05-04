@@ -1,8 +1,22 @@
 
-import './App.css'
+
+import React, { useState } from 'react';
 import './index.css';
 
 function App() {
+  //Initialize state for form fields
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  // Function to handle form submission
+  const handleSubmit = (event) => {
+    event.preventDefault();//prevent default form submission behavior
+    console.log('Submitted Name:', name);
+    console.log('Submitted Email:', email);
+    console.log('Submitted Message:', message);
+  }
+
   return (
     <div>
       <div className="title">
@@ -22,20 +36,36 @@ function App() {
       <div className="picasso"></div>
 
       {/* User Form */}
-      <form action="interestedUser" method="post">
+      <div className="userForm">
+       <form onSubmit={handleSubmit}>
         <h2>Interested in this Art?</h2>
         <ul>
           <li>
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name"/>
+              <input
+                type="text"
+                id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
           </li>
           <li>
             <label htmlFor="mail">E-mail:</label>
-            <input type="email" id="mail" />
+             <input
+                type="email"
+                id="mail"
+                value={email}
+                onChange={(e)=> setEmail(e.target.value)}
+              /> 
           </li>
           <li>
             <label htmlFor="msg">Message:</label>
-            <textarea id="msg" name="user_message" />
+              <textarea
+                id="msg"
+                name="user_message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
           </li>
           <li className="button">
             <button type="submit">Send me a message</button>
@@ -43,7 +73,9 @@ function App() {
         </ul>
       </form>
     </div>
+    </div>
   );
+  
 }
 
 export default App;
